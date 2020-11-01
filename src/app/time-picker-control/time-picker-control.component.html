@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+  <mat-label>{{templateOptions?.label}}</mat-label>
+  <mat-select [formControl]="control">
+    <mat-option *ngFor="let option of options" [value]="option.isoTime">{{option.displayTime}}</mat-option>
+  </mat-select>
+</mat-form-field>
