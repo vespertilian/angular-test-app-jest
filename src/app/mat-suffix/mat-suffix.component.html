@@ -1,0 +1,6 @@
+<ng-container #fieldComponent></ng-container>
+<ng-template #matSuffix>
+	<span (click)="suffixClick()" *ngIf="icon$ | async as icon">
+    <mat-icon data-test-id="mat-suffix" *ngIf="icon">{{ icon }}</mat-icon>
+  </span>
+</ng-template>
